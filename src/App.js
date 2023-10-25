@@ -6,7 +6,7 @@ import {useEffect, useState} from "react";
 import MovieCard from "./MovieCard";
 
 import './App.css';
-const API_URL = 'http://www.omdbapi.com?apikey=7b89b947';
+const API_URL = 'https://www.omdbapi.com?apikey=7b89b947';
 
 // const movie1 = 
 //   {
@@ -53,7 +53,7 @@ const App = () =>{
 
       </div>
       {
-    movies.length > 0
+    movies?.length > 0
     ? (
       <div className="container">
         {/* <MovieCard movie1={movie1} /> */}
